@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=+5 Pin=C18-2
+Added Pin To Net: NetName=+5 Pin=U4-4
+Added Pin To Net: NetName=+5 Pin=U4-16
+Added Room: Name=U_Lipo_Power
+Added Room: Name=U_MCU

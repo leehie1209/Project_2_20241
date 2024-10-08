@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=C11 NewDesignator=C15
+Change Component Designator: OldDesignator=C15 NewDesignator=C11
+Change Component Designator: OldDesignator=R11 NewDesignator=R13
+Change Component Designator: OldDesignator=R13 NewDesignator=R11
+Change Component Designator: OldDesignator=SW1 NewDesignator=SW2
+Change Component Designator: OldDesignator=SW2 NewDesignator=SW1
+Added Pin To Net: NetName=LED_1 Pin=IC4-4
+Added Pin To Net: NetName=LED_2 Pin=IC4-5
+Added Pin To Net: NetName=LED_3 Pin=IC4-6
+Added Pin To Net: NetName=Data Pin=IC4-31
+Added Pin To Net: NetName=Provision Pin=IC4-36
+Added Room: Name=U_Lipo_Power
+Added Room: Name=U_MCU

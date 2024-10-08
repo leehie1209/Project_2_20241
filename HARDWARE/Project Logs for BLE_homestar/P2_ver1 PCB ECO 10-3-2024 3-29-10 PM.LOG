@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C14 Old Footprint=CAP_0402 New Footprint=CAP_0805
+Change Component Footprint: Designator=C19 Old Footprint=CAP_0402 New Footprint=CAP_0805
+Added Room: Name=U_MCU

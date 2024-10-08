@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=C12 Old Footprint=CAP_0402 New Footprint=CAP_0805
+Change Component Footprint: Designator=C13 Old Footprint=CAP_0402 New Footprint=CAP_0805
+Change Component Footprint: Designator=C18 Old Footprint=CAP_0402 New Footprint=CAP_0805
+Change Component Footprint: Designator=R12 Old Footprint=RES-SMD-0101 New Footprint=RES-SMD-0805
+Change Component Footprint: Designator=R15 Old Footprint=RES-SMD-0101 New Footprint=RES-SMD-0805
+Change Component Footprint: Designator=R17 Old Footprint=RES-SMD-0101 New Footprint=RES-SMD-0805
+Added Room: Name=U_MCU
