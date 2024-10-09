@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=+5 Pin=C18-2
+Removed Pin From Net: NetName=EN Pin=Q1-3
+Removed Pin From Net: NetName=IO0 Pin=Q2-3
+Removed Pin From Net: NetName=+5 Pin=U4-4
+Added Pin To Net: NetName=IO0 Pin=Q1-3
+Added Pin To Net: NetName=EN Pin=Q2-3
+Added Pin To Net: NetName=NetC18_2 Pin=C18-2
+Added Pin To Net: NetName=NetC18_2 Pin=U4-4
+Added Net: Name=NetC18_2
+Added Room: Name=U_Lipo_Power
+Added Room: Name=U_MCU

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetQ1_2 Pin=Q2-1
+Removed Pin From Net: NetName=NetQ1_1 Pin=Q2-2
+Removed Pin From Net: NetName=NetQ1_2 Pin=R22-1
+Added Pin To Net: NetName=NetQ1_2 Pin=R22-2
+Added Pin To Net: NetName=NetQ1_2 Pin=U4-13
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R22-1
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=NetQ2_2 Pin=R21-2
+Added Pin To Net: NetName=NetQ2_2 Pin=U4-14
+Added Net: Name=NetQ2_2
+Added Room: Name=U_Lipo_Power
+Added Room: Name=U_MCU
