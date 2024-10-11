@@ -369,6 +369,13 @@ CONFIG_COMPILER_STACK_CHECK_MODE_NONE=y
 #
 
 #
+# ThingsBoard Client SDK Configurations
+#
+# CONFIG_THINGSBOARD_ENABLE_DYNAMIC is not set
+# CONFIG_THINGSBOARD_ENABLE_DEBUG is not set
+# end of ThingsBoard Client SDK Configurations
+
+#
 # Application Level Tracing
 #
 # CONFIG_APPTRACE_DEST_JTAG is not set

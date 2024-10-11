@@ -4695,6 +4695,34 @@
             {
                 "children": [
                     {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "If this is enabled the library will use DynamicJsonDocument to receive messages from the MQTT broker and use Vector to hold Subscription data instead of Arrays. Removing the need to declare MaxFieldsAmount, MaxSubscribtions, MaxAttributes and MaxRPC template arguments. But instead increasing heap allocation and usage drastically.",
+                        "id": "THINGSBOARD_ENABLE_DYNAMIC",
+                        "name": "THINGSBOARD_ENABLE_DYNAMIC",
+                        "range": null,
+                        "title": "Replace static with dynami library usage",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "If this is enabled the library uses more global constant variables, but will print more about the currently ongoing internal processes. Which might help debug certain issues.",
+                        "id": "THINGSBOARD_ENABLE_DEBUG",
+                        "name": "THINGSBOARD_ENABLE_DEBUG",
+                        "range": null,
+                        "title": "Enable additional debug log messages",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-thingsboard-client-sdk-configurations",
+                "title": "ThingsBoard Client SDK Configurations",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
                         "children": [
                             {
                                 "children": [],

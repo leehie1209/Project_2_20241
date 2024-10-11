@@ -1,3 +1,4 @@
+source "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/ThingsBoard/Kconfig"
 source "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/app_trace/Kconfig"
 source "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/bt/Kconfig"
 source "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/driver/Kconfig"
