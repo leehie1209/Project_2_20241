@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "esp_ble_mesh_sensor_model_api.h": "c"
+    }
+}
