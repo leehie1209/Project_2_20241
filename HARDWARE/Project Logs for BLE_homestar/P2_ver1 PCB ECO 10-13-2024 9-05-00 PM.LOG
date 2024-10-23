@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=NetC9_2 Pin=C9-2
+Removed Member From Class: ClassName=U_Lipo_Power Member=C9
+Change Component Comment : Designator=C8 Old Comment=104 New Comment=10uF
+Added Component: Designator=C?(CAP_7343)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetC9_2 Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Change Net Name : Old Net Name=NetC9_2 New Net Name=NetC?_1
+Added Member To Class: ClassName=U_Lipo_Power Member=Component C? CAP_TAN_SMD
+Added Member To Class: ClassName=U_MCU Member=Component R19 10k
+Added Member To Class: ClassName=U_MCU Member=Component R22 10k
+Added Room: Name=U_Lipo_Power
+Added Room: Name=U_MCU

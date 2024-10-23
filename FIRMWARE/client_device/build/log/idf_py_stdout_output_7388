@@ -1,0 +1,89 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\HUST\20241\Project_2_20241\FIRMWARE\client_device\build\bootloader\esp-idf\esptool_py && C:\Users\ASUS\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/interface/board.c.obj
+D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/interface/board.c:42:13: warning: 'board_button_init' defined but not used [-Wunused-function]
+   42 | static void board_button_init(void)
+      |             ^~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable sensor_client.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/sensor_client.bin
+[7/8] cmd.exe /C "cd /D D:\HUST\20241\Project_2_20241\FIRMWARE\client_device\build\esp-idf\esptool_py && C:\Users\ASUS\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/partition_table/partition-table.bin D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/sensor_client.bin"
+sensor_client.bin binary size 0xf62f0 bytes. Smallest app partition is 0x100000 bytes. 0x9d10 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[7/8] cmd.exe /C "cd /D C:\Users\ASUS\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=C:/Users/ASUS/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build -P C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 sensor_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM10
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.13MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: d4:8a:fc:99:17:04
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768d... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.5 seconds (effective 403.4 kbit/s)...
+Hash of data verified.
+Compressed 1008368 bytes to 580094...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001da69... (5 %)
+Writing at 0x0002e9db... (8 %)
+Writing at 0x0003ba59... (11 %)
+Writing at 0x000444cb... (13 %)
+Writing at 0x00049efa... (16 %)
+Writing at 0x0004f67f... (19 %)
+Writing at 0x00054cbb... (22 %)
+Writing at 0x0005b3b3... (25 %)
+Writing at 0x00061868... (27 %)
+Writing at 0x0006764e... (30 %)
+Writing at 0x0006d784... (33 %)
+Writing at 0x0007543c... (36 %)
+Writing at 0x0007b99c... (38 %)
+Writing at 0x00081bef... (41 %)
+Writing at 0x00087684... (44 %)
+Writing at 0x0008cf9c... (47 %)
+Writing at 0x000926e3... (50 %)
+Writing at 0x00098491... (52 %)
+Writing at 0x0009effc... (55 %)
+Writing at 0x000a4cc5... (58 %)
+Writing at 0x000aace0... (61 %)
+Writing at 0x000b0d43... (63 %)
+Writing at 0x000b6862... (66 %)
+Writing at 0x000bc121... (69 %)
+Writing at 0x000c21b9... (72 %)
+Writing at 0x000c7dae... (75 %)
+Writing at 0x000ce13b... (77 %)
+Writing at 0x000d3e4c... (80 %)
+Writing at 0x000dcd31... (83 %)
+Writing at 0x000e4794... (86 %)
+Writing at 0x000ec891... (88 %)
+Writing at 0x000f2adb... (91 %)
+Writing at 0x000f82d3... (94 %)
+Writing at 0x000fdf5b... (97 %)
+Writing at 0x00103b7b... (100 %)
+Wrote 1008368 bytes (580094 compressed) at 0x00010000 in 13.2 seconds (effective 609.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1176.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

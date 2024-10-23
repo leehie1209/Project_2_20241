@@ -17,7 +17,7 @@
 #define BUTTON_IO_NUM           0
 #define BUTTON_ACTIVE_LEVEL     0
 
-extern void example_ble_mesh_send_sensor_message(uint32_t opcode);
+extern void ble_mesh_send_sensor_message(uint32_t opcode);
 
 static uint32_t send_opcode[] = {
     [0] = ESP_BLE_MESH_MODEL_OP_SENSOR_DESCRIPTOR_GET,
@@ -30,19 +30,31 @@ static uint8_t press_count;
 
 static void button_tap_cb(void* arg)
 {
-    example_ble_mesh_send_sensor_message(send_opcode[press_count++]);
+    ble_mesh_send_sensor_message(send_opcode[press_count++]);
     press_count = press_count % ARRAY_SIZE(send_opcode);
+}
+
+void ble(void)
+{
+    ble_mesh_send_sensor_message(send_opcode[3]);
+}
+
+static void request_get_data(void* arg){
+    ble_mesh_send_sensor_message(ESP_BLE_MESH_MODEL_OP_SENSOR_GET);
+    ESP_LOGI(TAG, "We need Data");
 }
 
 static void board_button_init(void)
 {
     button_handle_t btn_handle = iot_button_create(BUTTON_IO_NUM, BUTTON_ACTIVE_LEVEL);
     if (btn_handle) {
-        iot_button_set_evt_cb(btn_handle, BUTTON_CB_RELEASE, button_tap_cb, "RELEASE");
+        iot_button_set_evt_cb(btn_handle, BUTTON_CB_RELEASE, request_get_data, "RELEASE");
     }
 }
+
 
 void board_init(void)
 {
     board_button_init();
 }
+

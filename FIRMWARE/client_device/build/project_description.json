@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "sensor_client",
-    "project_version":    "24cf49d-dirty",
+    "project_version":    "d0f2d9e-dirty",
     "project_path":       "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device",
     "idf_path":           "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build",
@@ -850,7 +850,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/main.c", "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/board.c" ],
+            "sources": [ "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/app_main.c", "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/interface/board.c", "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/protocol/ble.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

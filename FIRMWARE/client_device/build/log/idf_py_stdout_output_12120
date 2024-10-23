@@ -1,0 +1,30 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\HUST\20241\Project_2_20241\FIRMWARE\client_device\build\bootloader\esp-idf\esptool_py && C:\Users\ASUS\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/interface/board.c.obj
+D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/main/interface/board.c:31:13: warning: 'button_tap_cb' defined but not used [-Wunused-function]
+   31 | static void button_tap_cb(void* arg)
+      |             ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable sensor_client.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/sensor_client.bin
+[7/8] cmd.exe /C "cd /D D:\HUST\20241\Project_2_20241\FIRMWARE\client_device\build\esp-idf\esptool_py && C:\Users\ASUS\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/partition_table/partition-table.bin D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/sensor_client.bin"
+sensor_client.bin binary size 0xf6450 bytes. Smallest app partition is 0x100000 bytes. 0x9bb0 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[7/8] cmd.exe /C "cd /D C:\Users\ASUS\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=C:/Users/ASUS/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build -P C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 sensor_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: Wrong boot mode detected (0x13)! The chip needs to be in download mode.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+FAILED: CMakeFiles/flash D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build/CMakeFiles/flash 
+cmd.exe /C "cd /D C:\Users\ASUS\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=C:/Users/ASUS/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build -P C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

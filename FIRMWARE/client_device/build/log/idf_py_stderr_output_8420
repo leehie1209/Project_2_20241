@@ -1,0 +1,8 @@
+CMake Error at C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/project.cmake:349 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/path/to/your/components
+Call Stack (most recent call first):
+  C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/project.cmake:433 (__project_init)
+  CMakeLists.txt:8 (project)
+
+

@@ -1,0 +1,10 @@
+CMake Error at C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/build.cmake:266 (message):
+  Failed to resolve component 'iot_button'.
+Call Stack (most recent call first):
+  C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/build.cmake:302 (__build_resolve_and_add_req)
+  C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/build.cmake:595 (__build_expand_requirements)
+  C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/project.cmake:547 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

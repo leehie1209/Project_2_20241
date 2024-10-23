@@ -1,0 +1,12 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "ble_server.h": "c",
+        "board.h": "c",
+        "ble_mesh_example_init.h": "c",
+        "esp_ble_mesh_networking_api.h": "c",
+        "esp_ble_mesh_config_model_api.h": "c",
+        "esp_ble_mesh_sensor_model_api.h": "c",
+        "esp_ble_mesh_defs.h": "c"
+    }
+}

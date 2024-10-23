@@ -1,5 +1,19 @@
 {
     "files.associations": {
-        "esp_ble_mesh_sensor_model_api.h": "c"
-    }
+        "esp_ble_mesh_sensor_model_api.h": "c",
+        "ble.h": "c",
+        "board.h": "c",
+        "esp_ble_mesh_config_model_api.h": "c",
+        "esp_ble_mesh_provisioning_api.h": "c",
+        "iot_button.h": "c",
+        "freertos.h": "c",
+        "gpio.h": "c",
+        "esp_ble_mesh_networking_api.h": "c",
+        "esp_ble_mesh_common_api.h": "c",
+        "ble_mesh_example_init.h": "c",
+        "esp_gap_ble_api.h": "c",
+        "esp_log.h": "c"
+    },
+    "idf.adapterTargetName": "esp32",
+    "C_Cpp.errorSquiggles": "disabled"
 }
