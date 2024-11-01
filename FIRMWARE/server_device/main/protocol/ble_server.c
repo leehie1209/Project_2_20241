@@ -27,7 +27,7 @@
 
 static const char *TAG = "BLE_Sever";
 
-static uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN] = { 0x32, 0x10 };
+uint8_t dev_uuid[ESP_BLE_MESH_OCTET16_LEN] = { 0x32, 0x10 };
 
 static esp_ble_mesh_cfg_srv_t config_server = {
     /* 3 transmissions with 20ms interval */

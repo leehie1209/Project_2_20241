@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: sensor_client
+# Project: server_device
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__sensor_client.2eelf_
+rule C_COMPILER__server_device.2eelf_
   depfile = $DEP_FILE
   deps = gcc
   command = ccache C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__sensor_client.2eelf_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__sensor_client.2eelf_
+rule CXX_EXECUTABLE_LINKER__server_device.2eelf_
   command = cmd.exe /C "$PRE_LINK && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $FLAGS $LINK_FLAGS @$RSP_FILE -o $TARGET_FILE  && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   rspfile = $RSP_FILE
@@ -950,6 +950,37 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_wifi_
 
 
 #############################################
+# Rule for compiling ASM files.
+
+rule ASM_COMPILER____idf_bt_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ccache C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building ASM object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_bt_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ccache C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_bt_
+  command = cmd.exe /C "$PRE_LINK && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS @$RSP_FILE && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  rspfile = $RSP_FILE
+  rspfile_content = $in $LINK_PATH $LINK_LIBRARIES
+  restat = $RESTAT
+
+
+#############################################
 # Rule for compiling C files.
 
 rule C_COMPILER____idf_unity_
@@ -1399,6 +1430,25 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER____idf_example_init_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ccache C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_example_init_
+  command = cmd.exe /C "$PRE_LINK && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER____idf_button_
   depfile = $DEP_FILE
   deps = gcc
@@ -1420,25 +1470,6 @@ rule CXX_COMPILER____idf_button_
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER____idf_button_
-  command = cmd.exe /C "$PRE_LINK && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
-  description = Linking C static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER____idf_example_init_
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ccache C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C static library.
-
-rule C_STATIC_LIBRARY_LINKER____idf_example_init_
   command = cmd.exe /C "$PRE_LINK && C:\Users\ASUS\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\ASUS\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT

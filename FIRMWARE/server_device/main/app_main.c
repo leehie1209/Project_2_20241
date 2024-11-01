@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <string.h>
+#include <inttypes.h>
+
+#include "esp_log.h"
+#include "nvs_flash.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -8,9 +13,6 @@
 #include "freertos/semphr.h"
 
 #include "ble_mesh_example_init.h"
-
-#include "esp_log.h"
-#include "nvs_flash.h"
 
 #include "interface/board.h"
 #include "protocol/ble_server.h"

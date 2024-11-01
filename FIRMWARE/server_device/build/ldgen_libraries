@@ -38,6 +38,7 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_netif/lib
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_coex/libesp_coex.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_wifi/libesp_wifi.a
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/bt/libbt.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/unity/libunity.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/cmock/libcmock.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/console/libconsole.a
@@ -61,5 +62,5 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/perfmon/libpe
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/spiffs/libspiffs.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/main/libmain.a
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/libbutton.a
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/libexample_init.a
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/libbutton.a

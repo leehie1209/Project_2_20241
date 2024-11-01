@@ -13,3 +13,4 @@ dependencies:
 manifest_hash: b8ea2a0ea6bd05e66a15c209a3f5767e9cfef93ef7a12ec3e58c245f9f9dbb8c
 target: esp32
 version: 1.0.0
+  

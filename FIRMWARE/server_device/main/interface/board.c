@@ -14,11 +14,20 @@
 
 #define TAG "BOARD"
 
+int prov;
+int batt;
+
 struct _led_state led_state[3] = {
     { LED_OFF, LED_OFF, LED_R, "red"   },
     { LED_OFF, LED_OFF, LED_G, "green" },
     { LED_OFF, LED_OFF, LED_B, "blue"  },
 };
+
+gpio_set_level(GPIO_NUM_22, prov);
+gpio_get_level(GPIO_NUM_19, batt);
+
+
+
 
 void board_led_operation(uint8_t pin, uint8_t onoff)
 {

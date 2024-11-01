@@ -5649,7 +5649,10 @@
                                                 "help": "Maximum GATT Server Profiles Count",
                                                 "id": "BT_GATT_MAX_SR_PROFILES",
                                                 "name": "BT_GATT_MAX_SR_PROFILES",
-                                                "range": null,
+                                                "range": [
+                                                    1,
+                                                    32
+                                                ],
                                                 "title": "Max GATT Server Profiles",
                                                 "type": "int"
                                             },
@@ -5659,7 +5662,10 @@
                                                 "help": "Maximum GATT Service Attributes Count",
                                                 "id": "BT_GATT_MAX_SR_ATTRIBUTES",
                                                 "name": "BT_GATT_MAX_SR_ATTRIBUTES",
-                                                "range": null,
+                                                "range": [
+                                                    1,
+                                                    500
+                                                ],
                                                 "title": "Max GATT Service Attributes",
                                                 "type": "int"
                                             },
@@ -5750,7 +5756,10 @@
                                                 "help": "Maximum GATTC cache characteristic count",
                                                 "id": "BT_GATTC_MAX_CACHE_CHAR",
                                                 "name": "BT_GATTC_MAX_CACHE_CHAR",
-                                                "range": null,
+                                                "range": [
+                                                    1,
+                                                    500
+                                                ],
                                                 "title": "Max gattc cache characteristic for discover",
                                                 "type": "int"
                                             },
@@ -5770,7 +5779,10 @@
                                                 "help": "The number of attempts to reconnect if the connection establishment failed",
                                                 "id": "BT_GATTC_CONNECT_RETRY_COUNT",
                                                 "name": "BT_GATTC_CONNECT_RETRY_COUNT",
-                                                "range": null,
+                                                "range": [
+                                                    0,
+                                                    7
+                                                ],
                                                 "title": "The number of attempts to reconnect if the connection establishment failed",
                                                 "type": "int"
                                             }
@@ -7727,7 +7739,10 @@
                                 "help": "Maximum BT/BLE connection count. The ESP32-C3/S3 chip supports a maximum of 10 instances,\nincluding ADV, SCAN and connections. The ESP32-C3/S3 chip can connect up to 9 devices if\nADV or SCAN uses only one. If ADV and SCAN are both used, The ESP32-C3/S3 chip is connected\nto a maximum of 8 devices. Because Bluetooth cannot reclaim used instances once ADV or SCAN\nis used.",
                                 "id": "BT_ACL_CONNECTIONS",
                                 "name": "BT_ACL_CONNECTIONS",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    9
+                                ],
                                 "title": "BT/BLE MAX ACL CONNECTIONS(1~9)",
                                 "type": "int"
                             },
@@ -7797,7 +7812,10 @@
                                 "help": "Bluetooth Connection establishment maximum time, if connection time exceeds this value, the connection\nestablishment fails, ESP_GATTC_OPEN_EVT or ESP_GATTS_OPEN_EVT is triggered.",
                                 "id": "BT_BLE_ESTAB_LINK_CONN_TOUT",
                                 "name": "BT_BLE_ESTAB_LINK_CONN_TOUT",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    60
+                                ],
                                 "title": "Timeout of BLE connection establishment",
                                 "type": "int"
                             },
@@ -7807,7 +7825,10 @@
                                 "help": "Bluetooth Device name length shall be no larger than 248 octets, If the broadcast data cannot contain\nthe complete device name, then only the shortname will be displayed, the rest parts that can't fit in\nwill be truncated.",
                                 "id": "BT_MAX_DEVICE_NAME_LEN",
                                 "name": "BT_MAX_DEVICE_NAME_LEN",
-                                "range": null,
+                                "range": [
+                                    32,
+                                    248
+                                ],
                                 "title": "length of bluetooth device name",
                                 "type": "int"
                             },
@@ -7827,7 +7848,10 @@
                                 "help": "This set RPA timeout of Controller and Host.\nDefault is 900 s (15 minutes). Range is 1 s to 1 hour (3600 s).",
                                 "id": "BT_BLE_RPA_TIMEOUT",
                                 "name": "BT_BLE_RPA_TIMEOUT",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    3600
+                                ],
                                 "title": "Timeout of resolvable private address",
                                 "type": "int"
                             },
@@ -8944,7 +8968,10 @@
                                 "help": "BLE maximum connections of bluetooth controller.\nEach connection uses 1KB static DRAM whenever the BT controller is enabled.",
                                 "id": "BTDM_CTRL_BLE_MAX_CONN",
                                 "name": "BTDM_CTRL_BLE_MAX_CONN",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    9
+                                ],
                                 "title": "BLE Max Connections",
                                 "type": "int"
                             },
@@ -9445,7 +9472,10 @@
                                         "help": "Maximum number of devices which can be recorded in scan duplicate filter.\nWhen the maximum amount of device in the filter is reached, the cache will be refreshed.",
                                         "id": "BTDM_SCAN_DUPL_CACHE_SIZE",
                                         "name": "BTDM_SCAN_DUPL_CACHE_SIZE",
-                                        "range": null,
+                                        "range": [
+                                            10,
+                                            1000
+                                        ],
                                         "title": "Maximum number of devices in scan duplicate filter",
                                         "type": "int"
                                     },
@@ -9455,7 +9485,10 @@
                                         "help": "If the period value is non-zero, the controller will periodically clear the device information\nstored in the scan duuplicate filter. If it is 0, the scan duuplicate filter will not be cleared\nuntil the scanning is disabled. Duplicate advertisements for this period should not be sent to the\nHost in advertising report events.\nThere are two scenarios where the ADV packet will be repeatedly reported:\n1. The duplicate scan cache is full, the controller will delete the oldest device information and\nadd new device information.\n2. When the refresh period is up, the controller will clear all device information and start filtering\nagain.",
                                         "id": "BTDM_SCAN_DUPL_CACHE_REFRESH_PERIOD",
                                         "name": "BTDM_SCAN_DUPL_CACHE_REFRESH_PERIOD",
-                                        "range": null,
+                                        "range": [
+                                            0,
+                                            1000
+                                        ],
                                         "title": "Duplicate scan list refresh period (seconds)",
                                         "type": "int"
                                     },
@@ -9467,7 +9500,10 @@
                                                 "help": "Maximum number of adv packets which can be recorded in duplicate scan cache for BLE Mesh.\nWhen the maximum amount of device in the filter is reached, the cache will be refreshed.",
                                                 "id": "BTDM_MESH_DUPL_SCAN_CACHE_SIZE",
                                                 "name": "BTDM_MESH_DUPL_SCAN_CACHE_SIZE",
-                                                "range": null,
+                                                "range": [
+                                                    10,
+                                                    1000
+                                                ],
                                                 "title": "Maximum number of Mesh adv packets in scan duplicate filter",
                                                 "type": "int"
                                             }
@@ -9507,7 +9543,10 @@
                                         "help": "The number of unprocessed advertising report that Bluedroid can save.If you set\n`BTDM_BLE_ADV_REPORT_FLOW_CTRL_NUM` to a small value, this may cause adv packets lost.\nIf you set `BTDM_BLE_ADV_REPORT_FLOW_CTRL_NUM` to a large value, Bluedroid may cache a\nlot of adv packets and this may cause system memory run out. For example, if you set\nit to 50, the maximum memory consumed by host is 35 * 50 bytes. Please set\n`BTDM_BLE_ADV_REPORT_FLOW_CTRL_NUM` according to your system free memory and handle adv\npackets as fast as possible, otherwise it will cause adv packets lost.",
                                         "id": "BTDM_BLE_ADV_REPORT_FLOW_CTRL_NUM",
                                         "name": "BTDM_BLE_ADV_REPORT_FLOW_CTRL_NUM",
-                                        "range": null,
+                                        "range": [
+                                            50,
+                                            1000
+                                        ],
                                         "title": "BLE adv report flow control number",
                                         "type": "int"
                                     },
@@ -9517,7 +9556,10 @@
                                         "help": "When adv report flow control is enabled, The ADV lost event will be generated when the number\nof ADV packets lost in the controller reaches this threshold. It is better to set a larger value.\nIf you set `BTDM_BLE_ADV_REPORT_DISCARD_THRSHOLD` to a small value or printf every adv lost event, it\nmay cause adv packets lost more.",
                                         "id": "BTDM_BLE_ADV_REPORT_DISCARD_THRSHOLD",
                                         "name": "BTDM_BLE_ADV_REPORT_DISCARD_THRSHOLD",
-                                        "range": null,
+                                        "range": [
+                                            1,
+                                            1000
+                                        ],
                                         "title": "BLE adv lost event threshold value",
                                         "type": "int"
                                     }
@@ -9864,7 +9906,10 @@
                                 "help": "This option specifies the interval of sending two consecutive unprovisioned\ndevice beacon, users can use this option to change the frequency of sending\nunprovisioned device beacon. For example, if the value is 5, it means the\nunprovisioned device beacon will send every 5 seconds. When the option of\nBLE_MESH_FAST_PROV is selected, the value is better to be 3 seconds, or less.",
                                 "id": "BLE_MESH_UNPROVISIONED_BEACON_INTERVAL",
                                 "name": "BLE_MESH_UNPROVISIONED_BEACON_INTERVAL",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    100
+                                ],
                                 "title": "Interval between two consecutive Unprovisioned Device Beacon",
                                 "type": "int"
                             }
@@ -9905,7 +9950,10 @@
                                 "help": "This option determines for how long the local node advertises using\nNode Identity. The given value is in seconds. The specification limits\nthis to 60 seconds and lists it as the recommended value as well.\nSo leaving the default value is the safest option.\nWhen an unprovisioned device is provisioned successfully and becomes a\nnode, it will start to advertise using Node Identity during the time\nset by this option. And after that, Network ID will be advertised.",
                                 "id": "BLE_MESH_NODE_ID_TIMEOUT",
                                 "name": "BLE_MESH_NODE_ID_TIMEOUT",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    60
+                                ],
                                 "title": "Node Identity advertising timeout",
                                 "type": "int"
                             },
@@ -9915,7 +9963,10 @@
                                 "help": "This option specifies how many Proxy Filter entries the local node supports.\nThe entries of Proxy filter (whitelist or blacklist) are used to store a\nlist of addresses which can be used to decide which messages will be forwarded\nto the Proxy Client by the Proxy Server.",
                                 "id": "BLE_MESH_PROXY_FILTER_SIZE",
                                 "name": "BLE_MESH_PROXY_FILTER_SIZE",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    32767
+                                ],
                                 "title": "Maximum number of filter entries per Proxy Client",
                                 "type": "int"
                             }
@@ -10047,7 +10098,10 @@
                         "help": "This option specifies how many subnets a Mesh network can have at the same time.\nIndeed, this value decides the number of the network keys which can be owned by a node.",
                         "id": "BLE_MESH_SUBNET_COUNT",
                         "name": "BLE_MESH_SUBNET_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            4096
+                        ],
                         "title": "Maximum number of mesh subnets per network",
                         "type": "int"
                     },
@@ -10057,7 +10111,10 @@
                         "help": "This option specifies how many application keys the device can store per network.\nIndeed, this value decides the number of the application keys which can be owned by a node.",
                         "id": "BLE_MESH_APP_KEY_COUNT",
                         "name": "BLE_MESH_APP_KEY_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            4096
+                        ],
                         "title": "Maximum number of application keys per network",
                         "type": "int"
                     },
@@ -10067,7 +10124,10 @@
                         "help": "This option specifies the maximum number of application keys to which each model\ncan be bound.",
                         "id": "BLE_MESH_MODEL_KEY_COUNT",
                         "name": "BLE_MESH_MODEL_KEY_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            4096
+                        ],
                         "title": "Maximum number of application keys per model",
                         "type": "int"
                     },
@@ -10077,7 +10137,10 @@
                         "help": "This option specifies the maximum number of addresses to which each model can\nbe subscribed.",
                         "id": "BLE_MESH_MODEL_GROUP_COUNT",
                         "name": "BLE_MESH_MODEL_GROUP_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            4096
+                        ],
                         "title": "Maximum number of group address subscriptions per model",
                         "type": "int"
                     },
@@ -10087,7 +10150,10 @@
                         "help": "This option specifies how many Label UUIDs can be stored.\nIndeed, this value decides the number of the Virtual Addresses can be supported by a node.",
                         "id": "BLE_MESH_LABEL_COUNT",
                         "name": "BLE_MESH_LABEL_COUNT",
-                        "range": null,
+                        "range": [
+                            0,
+                            4096
+                        ],
                         "title": "Maximum number of Label UUIDs used for Virtual Addresses",
                         "type": "int"
                     },
@@ -10097,7 +10163,10 @@
                         "help": "This option specifies the maximum capacity of the replay protection list.\nIt is similar to Network message cache size, but has a different purpose.\nThe replay protection list is used to prevent a node from replay attack,\nwhich will store the source address and sequence number of the received\nmesh messages.\nFor Provisioner, the replay protection list size should not be smaller than\nthe maximum number of nodes whose information can be stored. And the element\nnumber of each node should also be taken into consideration. For example, if\nProvisioner can provision up to 20 nodes and each node contains two elements,\nthen the replay protection list size of Provisioner should be at least 40.",
                         "id": "BLE_MESH_CRPL",
                         "name": "BLE_MESH_CRPL",
-                        "range": null,
+                        "range": [
+                            2,
+                            65535
+                        ],
                         "title": "Maximum capacity of the replay protection list",
                         "type": "int"
                     },
@@ -10107,7 +10176,10 @@
                         "help": "Number of messages that are cached for the network. This helps prevent\nunnecessary decryption operations and unnecessary relays. This option\nis similar to Replay protection list, but has a different purpose.\nA node is not required to cache the entire Network PDU and may cache\nonly part of it for tracking, such as values for SRC/SEQ or others.",
                         "id": "BLE_MESH_MSG_CACHE_SIZE",
                         "name": "BLE_MESH_MSG_CACHE_SIZE",
-                        "range": null,
+                        "range": [
+                            2,
+                            65535
+                        ],
                         "title": "Network message cache size",
                         "type": "int"
                     },
@@ -10117,7 +10189,10 @@
                         "help": "Number of advertising buffers available. The transport layer reserves\nADV_BUF_COUNT - 3 buffers for outgoing segments. The maximum outgoing\nSDU size is 12 times this value (out of which 4 or 8 bytes are used\nfor the Transport Layer MIC). For example, 5 segments means the maximum\nSDU size is 60 bytes, which leaves 56 bytes for application layer data\nusing a 4-byte MIC, or 52 bytes using an 8-byte MIC.",
                         "id": "BLE_MESH_ADV_BUF_COUNT",
                         "name": "BLE_MESH_ADV_BUF_COUNT",
-                        "range": null,
+                        "range": [
+                            6,
+                            256
+                        ],
                         "title": "Number of advertising buffers",
                         "type": "int"
                     },
@@ -10127,7 +10202,10 @@
                         "help": "When the IV Update state enters Normal operation or IV Update\nin Progress, we need to keep track of how many hours has passed\nin the state, since the specification requires us to remain in\nthe state at least for 96 hours (Update in Progress has an\nadditional upper limit of 144 hours).\n\nIn order to fulfill the above requirement, even if the node might\nbe powered off once in a while, we need to store persistently\nhow many hours the node has been in the state. This doesn't\nnecessarily need to happen every hour (thanks to the flexible\nduration range). The exact cadence will depend a lot on the\nways that the node will be used and what kind of power source it\nhas.\n\nSince there is no single optimal answer, this configuration\noption allows specifying a divider, i.e. how many intervals\nthe 96 hour minimum gets split into. After each interval the\nduration that the node has been in the current state gets\nstored to flash. E.g. the default value of 4 means that the\nstate is saved every 24 hours (96 / 4).",
                         "id": "BLE_MESH_IVU_DIVIDER",
                         "name": "BLE_MESH_IVU_DIVIDER",
-                        "range": null,
+                        "range": [
+                            2,
+                            96
+                        ],
                         "title": "Divider for IV Update state refresh timer",
                         "type": "int"
                     },
@@ -10147,7 +10225,10 @@
                         "help": "Maximum number of simultaneous outgoing multi-segment and/or reliable messages.\nThe default value is 1, which means the device can only send one segmented\nmessage at a time. And if another segmented message is going to be sent, it\nshould wait for the completion of the previous one.\nIf users are going to send multiple segmented messages at the same time, this\nvalue should be configured properly.",
                         "id": "BLE_MESH_TX_SEG_MSG_COUNT",
                         "name": "BLE_MESH_TX_SEG_MSG_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            60
+                        ],
                         "title": "Maximum number of simultaneous outgoing segmented messages",
                         "type": "int"
                     },
@@ -10157,7 +10238,10 @@
                         "help": "Maximum number of simultaneous incoming multi-segment and/or reliable messages.\nThe default value is 1, which means the device can only receive one segmented\nmessage at a time. And if another segmented message is going to be received,\nit should wait for the completion of the previous one.\nIf users are going to receive multiple segmented messages at the same time, this\nvalue should be configured properly.",
                         "id": "BLE_MESH_RX_SEG_MSG_COUNT",
                         "name": "BLE_MESH_RX_SEG_MSG_COUNT",
-                        "range": null,
+                        "range": [
+                            1,
+                            255
+                        ],
                         "title": "Maximum number of simultaneous incoming segmented messages",
                         "type": "int"
                     },
@@ -10167,7 +10251,10 @@
                         "help": "Maximum incoming Upper Transport Access PDU length. Leave this to the default\nvalue, unless you really need to optimize memory usage.",
                         "id": "BLE_MESH_RX_SDU_MAX",
                         "name": "BLE_MESH_RX_SDU_MAX",
-                        "range": null,
+                        "range": [
+                            36,
+                            384
+                        ],
                         "title": "Maximum incoming Upper Transport Access PDU length",
                         "type": "int"
                     },
@@ -10177,7 +10264,10 @@
                         "help": "Maximum number of segments supported for outgoing messages.\nThis value should typically be fine-tuned based on what\nmodels the local node supports, i.e. what's the largest\nmessage payload that the node needs to be able to send.\nThis value affects memory and call stack consumption, which\nis why the default is lower than the maximum that the\nspecification would allow (32 segments).\n\nThe maximum outgoing SDU size is 12 times this number (out of\nwhich 4 or 8 bytes is used for the Transport Layer MIC). For\nexample, 5 segments means the maximum SDU size is 60 bytes,\nwhich leaves 56 bytes for application layer data using a\n4-byte MIC and 52 bytes using an 8-byte MIC.\n\nBe sure to specify a sufficient number of advertising buffers\nwhen setting this option to a higher value. There must be at\nleast three more advertising buffers (BLE_MESH_ADV_BUF_COUNT)\nas there are outgoing segments.",
                         "id": "BLE_MESH_TX_SEG_MAX",
                         "name": "BLE_MESH_TX_SEG_MAX",
-                        "range": null,
+                        "range": [
+                            2,
+                            32
+                        ],
                         "title": "Maximum number of segments in outgoing messages",
                         "type": "int"
                     },
@@ -10608,7 +10698,10 @@
                         "help": "Timeout value used by the node to get response of the acknowledged\nmessage which is sent by the client model.\nThis value indicates the maximum time that a client model waits for\nthe response of the sent acknowledged messages. If a client model\nuses 0 as the timeout value when sending acknowledged messages, then\nthe default value will be used which is four seconds.",
                         "id": "BLE_MESH_CLIENT_MSG_TIMEOUT",
                         "name": "BLE_MESH_CLIENT_MSG_TIMEOUT",
-                        "range": null,
+                        "range": [
+                            100,
+                            1200000
+                        ],
                         "title": "Timeout(ms) for client message response",
                         "type": "int"
                     },

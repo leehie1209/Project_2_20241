@@ -52,7 +52,6 @@ static void board_button_init(void)
     }
 }
 
-
 void board_init(void)
 {
     board_button_init();

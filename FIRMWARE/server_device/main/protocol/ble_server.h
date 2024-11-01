@@ -27,4 +27,6 @@
 esp_err_t ble_mesh_init(void);
 esp_err_t bluetooth_init (void);
 
+extern uint8_t dev_uuid[16];
+
 #endif

@@ -419,11 +419,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/cmake_install.cmake")
+  include("D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/cmake_install.cmake")
+  include("D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/cmake_install.cmake")
 endif()
 

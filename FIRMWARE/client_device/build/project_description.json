@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "sensor_client",
-    "project_version":    "d0f2d9e-dirty",
+    "project_version":    "43f1af0-dirty",
     "project_path":       "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device",
     "idf_path":           "C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/build",

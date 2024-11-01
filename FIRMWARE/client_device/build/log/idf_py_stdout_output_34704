@@ -1,4 +1,0 @@
--- IDF_TARGET is not set, guessed 'esp32' from sdkconfig 'D:/HUST/20241/Project_2_20241/FIRMWARE/client_device/sdkconfig'
--- Found Git: C:/Users/ASUS/Espressif/tools/idf-git/2.43.0/cmd/git.exe (found version "2.43.0.windows.1") 
--- Component directory C:/Users/ASUS/Espressif/frameworks/esp-idf-v5.1.2/components/managed_components does not contain a CMakeLists.txt file. No component will be added
--- Configuring incomplete, errors occurred!

@@ -9,7 +9,7 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/monitor.di
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/flash.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/encrypted-flash.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/_project_elf_src.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/sensor_client.elf.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/server_device.elf.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/size.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/size-files.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/CMakeFiles/size-components.dir
@@ -425,6 +425,7 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_wifi/CMak
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_wifi/CMakeFiles/install.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_wifi/CMakeFiles/install/local.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/esp_wifi/CMakeFiles/install/strip.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/bt/CMakeFiles/__idf_bt.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/bt/CMakeFiles/edit_cache.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/bt/CMakeFiles/rebuild_cache.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/bt/CMakeFiles/list_install_components.dir
@@ -634,13 +635,6 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/main/CMakeFil
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/main/CMakeFiles/install.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/main/CMakeFiles/install/local.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/main/CMakeFiles/install/strip.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/__idf_button.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/edit_cache.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/rebuild_cache.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/list_install_components.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install/local.dir
-D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install/strip.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/__idf_example_init.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/edit_cache.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/rebuild_cache.dir
@@ -648,3 +642,10 @@ D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/install.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/install/local.dir
 D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/example_init/CMakeFiles/install/strip.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/__idf_button.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/edit_cache.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/rebuild_cache.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/list_install_components.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install/local.dir
+D:/HUST/20241/Project_2_20241/FIRMWARE/server_device/build/esp-idf/button/CMakeFiles/install/strip.dir
